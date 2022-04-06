@@ -38,8 +38,12 @@ print(largest([10, 4, 231.1, 231, 91, 54]))
 #   occurrences('fleep floop', 'ee')  # returns 1
 #   occurrences('fleep floop', 'fe')  # returns 0
 
+def occurrences(str, selector):
+  return str.count(selector)
 
-
+print(occurrences('fleep floop', 'e'))
+print(occurrences('fleep floop', 'ee'))
+print(occurrences('fleep floop', 'fe'))
 
 # 4. Write a function named `product` that takes an *arbitrary* number of numbers, multiplies them all together, and returns the product. HINT: Review your notes on `args`.
     
