@@ -4,8 +4,14 @@
 #   sum_to(6)  # returns 21
 #   sum_to(10) # returns 55
 
-def func
-
+def sum_to(n):
+  loop_base = 1
+  sum = 0
+  while loop_base < n + 1:
+    sum += loop_base
+    loop_base += 1
+  return sum
+print(sum_to(10))
 
 # 2. Write a function named `largest` that takes a list of numbers as an argument and returns the largest number in that list.
 
